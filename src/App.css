@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+body {
+  margin: 0%;
+  padding: 0%;
+ background-color: #212529;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0f1720;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+
+.left {
+  display: flex;
   align-items: center;
+}
+
+#header-text {
+  margin: 4px;
+}
+
+.left ul {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+}
+
+.left ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link{
+  color: rgb(128, 128, 128);
+}
+
+.nav-link.active{
+ color: white;
+}
+
+i{
+  cursor: pointer;
+}
+
+.login-info{
+  display: flex;
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-info p{
+  margin:0 10px;
+  text-transform: capitalize;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.password-input-container {
+  position: relative;
+}
+
+.toggle-password-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.btn-p{
+  margin:0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+ 
+  .container-u{
+    width: 22rem!important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+.left ul{
+  padding: 0;
+}
+  
+}
+
+@media only screen and (max-width: 450px) {
+ 
+header{
+  flex-direction: column;
+}
+
+.left ul{
+  margin: 0!important;
+}
+
+.d-flex{
+  justify-content: space-between;
+}
+
+.right{
+  display: block;
+}
+
+.M-s{
+  width: 18rem!important;
+}
+
+.M-s1{
+  height: 22rem;
+}
+
+.M-s2{
+  height: 28rem;
+}
+
+.login-info{
+  justify-content: space-between;
+}
+
+.login-info p {
+  margin: 0px 0px;
+}
+
+.add-N h1{
+  font-size: 20px;
+}
+
+.My-N h1{
+  font-size: 20px;
+}
+
+.width-100{
+width: 100%!important;
+}
+
 }
