@@ -60,7 +60,11 @@ const Login = (props) => {
 
             <input type={showPassword ? 'text' : 'password'} className="form-control" value={credentials.password} onChange={onChange} id="password" name="password" />
             {credentials.Confirm_password && (
-            <button type="button" onClick={handleTogglePassword} className="toggle-password-button" > {showPassword ?<i class="fa-solid fa-eye-slash"></i>  : <i class="fa-regular fa-eye"></i>  } </button>
+            <button type="button" onClick={handleTogglePassword} className="toggle-password-button" >  {showPassword ? (
+              <i className="fa-solid fa-eye-slash"></i>
+            ) : (
+              <i className="fa-regular fa-eye"></i>
+            )} </button>
             )}
           </div>
         </div>

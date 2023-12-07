@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NoteState from "./context/NoteState";
 import Alert from './Components/Alert';
 import Signup from './Components/Signup';
@@ -35,7 +35,7 @@ function App() {
     <>
     <NoteState>
 
-      <BrowserRouter>
+    <Router>
         <Navbar />
         <Alert alert={alert}/>
 
@@ -50,7 +50,7 @@ function App() {
         </Routes>
         </div>
 
-      </BrowserRouter>
+      </Router>
 
       </NoteState>
     </>
